@@ -1,5 +1,5 @@
 {% set name = "libuvc" %}
-{% set version = "0.0.6" %}
+{% set version = "0.0.7" %}
 
 package:
   name: {{ name }}
@@ -7,11 +7,11 @@ package:
 
 source:
   - url: https://github.com/{{ name }}/{{ name }}/archive/v{{ version }}.tar.gz
-    sha256: 42175a53c1c704365fdc782b44233925e40c9344fbb7f942181c1090f06e2873
+    sha256: 7c6ba79723ad5d0ccdfbe6cadcfbd03f9f75b701d7ba96631eb1fd929a86ee72
 
 build:
-  number: 1
-  skip: True  # [win]
+  number: 0
+  skip: true  # [win]
   run_exports:
     - {{ pin_subpackage(name, max_pin='x') }}
 
@@ -33,7 +33,7 @@ test:
 
 about:
   home: https://github.com/libuvc/libuvc/
-  license:  BSD-3-Clause
+  license: BSD-3-Clause
   license_file: LICENSE.txt
   summary: libuvc is a cross-platform library for USB video devices, built atop libusb
 
