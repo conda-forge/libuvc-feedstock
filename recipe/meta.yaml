@@ -1,5 +1,5 @@
 {% set name = "libuvc" %}
-{% set version = "0.0.8" %}
+{% set version = "0.0.9" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://github.com/{{ name }}/{{ name }}/archive/v{{ version }}.tar.gz
-    sha256: abe134716f4c53fe60db2004b42adf6af60e64e45808135acfa4311454371ece
+    sha256: 825775b21b8558ac2afcbc2561ab1e5081898c9b0296673fcaa7cabb6e94078e
 
 build:
   number: 0
